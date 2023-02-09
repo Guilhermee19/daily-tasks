@@ -10,9 +10,9 @@ const routes: Routes = [
     path: '', component: NavbarComponent,
     children: [
       { path: '', redirectTo: 'tasks', pathMatch: 'full' },
-      { path: 'tasks', component: TasksComponent, title: 'Tarefas' },
-      { path: 'calendar', component: CalendarComponent, title: 'Calendario' },
-      { path: 'config', component: ConfigComponent, title: 'Configuração' },
+      { path: 'tasks', component: TasksComponent, title: 'DailyTasks' },
+      { path: 'calendar', component: CalendarComponent, title: 'DailyTasks' },
+      { path: 'config', component: ConfigComponent, title: 'DailyTasks' },
     ]
   },
   { path: '**', redirectTo: 'tasks' }

@@ -1,9 +1,25 @@
 <mat-drawer-container class="card_screen">
-  <mat-drawer #drawer class="menu" mode="over">
-    <p>Auto-resizing sidenav</p>
+
+  <mat-drawer #drawer class="menu_left" mode="over">
+    <section>
+      <h3 *ngFor="let name of list_tasks"> {{ name }} </h3>
+
+      <h3 (click)="addNewList()"> + Adicionar lista </h3>
+    </section>
   </mat-drawer>
 
   <div class="screen">
-    <icon name="menu" (click)="drawer.toggle()"></icon>
+    <header>
+      <icon id="menu" name="menu" (click)="drawer.toggle()"></icon>
+      <p>Todos</p>
+      <icon id="options" name="options"></icon>
+    </header>
+
+    <section>
+      <div class="task">
+        <mat-checkbox>Checked</mat-checkbox>
+      </div>
+    </section>
+
   </div>
 </mat-drawer-container>

@@ -11,7 +11,12 @@ export class TasksComponent implements OnInit {
 
   showFiller: boolean = false;
 
+  list_tasks: any = ['Todas']
+
   ngOnInit(): void {
   }
 
+  addNewList(){
+    this.list_tasks.push('New')
+  }
 }

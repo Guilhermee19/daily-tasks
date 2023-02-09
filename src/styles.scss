@@ -3,14 +3,36 @@
 @import './styles/variables';
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  box-sizing: border-box !important;
+
+  // -webkit-user-select: none !important;
+  // -moz-user-select: none !important;
+  // -ms-user-select: none !important;
+  // user-select: none !important;
 }
 
-body{
-  background-color: var(--bg-color);
+html,
+body {
+  height: 100%;
+  background-repeat: no-repeat;
+  background: linear-gradient(to bottom right,
+      #282d3e, #151b25);
+  // background-color: var(--bg-color);
   color: var(--color-text);
 }
+
+.effect_glass {
+  background: rgba(52, 83, 118, 0.3);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+}
+
+
